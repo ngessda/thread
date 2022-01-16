@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31919.166
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThreadingSomeAutismApp.App", "ThreadingSomeAutismApp.App\ThreadingSomeAutismApp.App.csproj", "{1F43F3F5-DD88-4566-86E0-2734E0C9951D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1F43F3F5-DD88-4566-86E0-2734E0C9951D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F43F3F5-DD88-4566-86E0-2734E0C9951D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F43F3F5-DD88-4566-86E0-2734E0C9951D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F43F3F5-DD88-4566-86E0-2734E0C9951D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D8DFF8C8-BDD6-4687-A505-BE69C3C391B2}
+	EndGlobalSection
+EndGlobal

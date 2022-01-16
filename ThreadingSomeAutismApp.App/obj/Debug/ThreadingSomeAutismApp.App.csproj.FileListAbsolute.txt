@@ -1,0 +1,8 @@
+D:\C#\ThreadingSomeAutismApp.App\ThreadingSomeAutismApp.App\bin\Debug\ThreadingSomeAutismApp.App.exe.config
+D:\C#\ThreadingSomeAutismApp.App\ThreadingSomeAutismApp.App\bin\Debug\ThreadingSomeAutismApp.App.exe
+D:\C#\ThreadingSomeAutismApp.App\ThreadingSomeAutismApp.App\bin\Debug\ThreadingSomeAutismApp.App.pdb
+D:\C#\ThreadingSomeAutismApp.App\ThreadingSomeAutismApp.App\obj\Debug\ThreadingSomeAutismApp.App.csproj.AssemblyReference.cache
+D:\C#\ThreadingSomeAutismApp.App\ThreadingSomeAutismApp.App\obj\Debug\ThreadingSomeAutismApp.App.csproj.SuggestedBindingRedirects.cache
+D:\C#\ThreadingSomeAutismApp.App\ThreadingSomeAutismApp.App\obj\Debug\ThreadingSomeAutismApp.App.csproj.CoreCompileInputs.cache
+D:\C#\ThreadingSomeAutismApp.App\ThreadingSomeAutismApp.App\obj\Debug\ThreadingSomeAutismApp.App.exe
+D:\C#\ThreadingSomeAutismApp.App\ThreadingSomeAutismApp.App\obj\Debug\ThreadingSomeAutismApp.App.pdb
