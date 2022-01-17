@@ -11,7 +11,7 @@ namespace ThreadingSomeAutismApp.App
     {
         static void Main(string[] args)
         {
-            new Threading(12,2);
+            Threading x = new Threading(0, 1);
             Console.ReadKey();
         }
     }

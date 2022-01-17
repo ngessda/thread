@@ -9,45 +9,47 @@ namespace ThreadingSomeAutismApp.App
 {
     internal class Threading
     {
-        private double x = 0;
-        private double fx = 0;
-        private const double eps = double.Epsilon;
-        private static object locker = new object();
+        private static double x;
+        private double result = 0;
+        public double Result { get; }
         private int n = Environment.ProcessorCount;
-        private int m = 2;
-        private Thread threading;
-        
+        private const int m = 4;
+        private Thread thread;
 
-        private int a;
-        private int b;
-        private double h;
-        public Threading(int ax, int bx)
+        private double a = 0;
+        private double b = 0;
+        private static double h;
+        public Threading(double ax, double bx)
         {
             a = ax;
             b = bx;
-            h = (bx - ax) / (n * m);
+            h = (b - a) / (n * m);
             StartingThreads();
         }
         private void StartingThreads()
         {
             for (int i = 0; i < n; i++)
             {
-                threading = new Thread(SolveFx);
-                threading.Name = "Поток " + i.ToString();
-                threading.Start();
+                thread = new Thread(new ParameterizedThreadStart(SolveFx));
+                thread.Name = "Поток " + i.ToString();
+                thread.Start(i + 1);
             }
         }
-        private void SolveFx()
+        private void SolveFx(object count)
         {
-            lock (locker)
+            double fx = 0;
+            x = ((b - a) / n) * (int)count;
+            for (int i = 0; i < m; i++)
             {
-                for (int i = 0; i < m; i++)
-                {
-                    x += h;
-                    fx += Math.Round(h * (Math.Sqrt(1 - (1 / Math.Pow(eps, x))) / ((x * x) + 1)), 3);
-                    Console.WriteLine("{0}: {1}", Thread.CurrentThread.Name, fx);
-                    Thread.Sleep(100);
-                }
+                x += h;
+                fx += h * (Math.Sqrt(1 - (1 / Math.Exp(x))) / (Math.Pow(x, 2) + 1));
+                Console.WriteLine("{0}: {1}", Thread.CurrentThread.Name, fx);
+                Thread.Sleep(100);
+            }
+            lock((object)result)
+            {
+                result += fx;
+                Console.WriteLine(Math.Round(result,3));
             }
         }
     }
